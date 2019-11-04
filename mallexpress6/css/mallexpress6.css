@@ -1,0 +1,146 @@
+@font-face {
+  font-family: FontBold;
+  src: url(../SF/SF-Pro-Display-Bold.otf); }
+@font-face {
+  font-family: FontRegular;
+  src: url(../SF/SF-Pro-Display-Regular.otf); }
+@font-face {
+  font-family: FontSemibold;
+  src: url(../SF/SF-Pro-Display-Semibold.otf); }
+@font-face {
+  font-family: FontMedium;
+  src: url(../SF/SF-Pro-Display-Medium.otf); }
+@font-face {
+  font-family: FontHeavy;
+  src: url(../SF/SF-Pro-Display-Heavy.otf); }
+@font-face {
+  font-family: FontBlack;
+  src: url(../SF/SF-Pro-Display-Black.otf); }
+.dropbtn {
+  float: right;
+  margin: 20px 13px; }
+
+.dropdown-content {
+  float: right;
+  margin-top: 65px;
+  border-radius: 10px;
+  box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(20px) brightness(80%);
+  background-color: #000000cb;
+  width: 354px; }
+  .dropdown-content .icon-text {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 33px 50px; }
+    .dropdown-content .icon-text li {
+      color: #FFFFFF;
+      padding: 7.5px 0px;
+      list-style: none; }
+      .dropdown-content .icon-text li p {
+        padding: 5px 20px;
+        font-family: FontRegular;
+        color: #FFFFFF;
+        font-size: 18px; }
+  .dropdown-content hr {
+    opacity: .68;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); }
+
+.questions {
+  line-height: 35px;
+  padding: 33px 50px 0px 40px;
+  color: #FFFFFF;
+  list-style: none;
+  font-size: 16px;
+  min-height: 280px;
+  font-family: FontRegular;
+  margin: 0px; }
+  .questions li:hover {
+    cursor: pointer;
+    color: #F8BE1A; }
+
+.section-three {
+  line-height: 29px;
+  padding: 15px 0px 7.5px 40px;
+  color: #FFFFFF; }
+  .section-three p {
+    font-size: 14px;
+    font-family: FontRegular;
+    margin: 0px; }
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0); }
+  50% {
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1); }
+  100% {
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0); } }
+  .section-three .md-radio {
+    padding: 0px 0px 15px; }
+    .section-three .md-radio.md-radio-inline {
+      display: inline-block; }
+    .section-three .md-radio input[type="radio"] {
+      display: none; }
+      .section-three .md-radio input[type="radio"]:checked + label:before {
+        border-color: #ffffff;
+        animation: ripple 0.2s linear forwards; }
+      .section-three .md-radio input[type="radio"]:checked + label:after {
+        transform: scale(1); }
+    .section-three .md-radio label {
+      display: inline-block;
+      height: 16px;
+      position: relative;
+      padding: 0 26px;
+      margin-bottom: 0;
+      cursor: pointer;
+      vertical-align: bottom; }
+      .section-three .md-radio label:before, .section-three .md-radio label:after {
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+        transition: all .3s ease;
+        transition-property: transform, border-color; }
+      .section-three .md-radio label:before {
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ffffff; }
+      .section-three .md-radio label:after {
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        transform: scale(0);
+        background: #F8BE1A; }
+
+.section-four {
+  padding: 20px 0px 0px 40px;
+  color: #FFFFFF;
+  line-height: 6px; }
+  .section-four .firttxt {
+    font-family: FontBold;
+    font-size: 14px; }
+  .section-four .secondtxt {
+    font-size: 13px;
+    font-family: FontRegular; }
+
+.clickbtn {
+  padding: 20px 40px 33px; }
+
+.chat-btn {
+  color: #FFFFFF;
+  background-color: transparent;
+  width: 273px;
+  height: 50px;
+  border-radius: 30px;
+  font-family: FontMedium;
+  border: 2px solid #F8BE1A;
+  transition: all .25s linear; }
+  .chat-btn:hover {
+    outline: none;
+    background-color: #F8BE1A;
+    color: #000000; }
+
+.chat-btn :focus {
+  outline: none; }
+
+/*# sourceMappingURL=mallexpress6.css.map */

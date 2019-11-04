@@ -1,0 +1,200 @@
+@font-face {
+    font-family: FontBold;
+    src: url(../SF/SF-Pro-Display-Bold.otf);
+  }
+  @font-face {
+    font-family: FontRegular;
+    src: url(../SF/SF-Pro-Display-Regular.otf);
+  }
+  @font-face {
+    font-family: FontSemibold;
+    src: url(../SF/SF-Pro-Display-Semibold.otf);
+  }
+  @font-face {
+    font-family: FontMedium;
+    src: url(../SF/SF-Pro-Display-Medium.otf);
+  }
+  @font-face {
+    font-family: FontHeavy;
+    src: url(../SF/SF-Pro-Display-Heavy.otf);
+  }
+  @font-face {
+    font-family: FontBlack;
+    src: url(../SF/SF-Pro-Display-Black.otf);
+  }
+
+  $yellow:#F8BE1A;
+  $white:#ffffff;
+  $black:#000000;
+
+ 
+    .dropbtn{
+      float: right;
+      margin: 20px 13px;}
+    
+ 
+.dropdown-content{
+    float: right;
+    margin-top: 65px;
+    border-radius: 10px;
+    box-shadow:3px 8px 15px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(20px) brightness(80%);
+    background-color: #000000cb;
+
+    width: 354px;
+    .icon-text {display: flex;
+        flex-wrap: wrap;
+        padding: 33px 50px;
+     
+        li{  color: #FFFFFF;
+            padding:7.5px 0px;
+            list-style: none;
+            p{
+                padding: 5px 20px;
+             font-family: FontRegular;
+                color: #FFFFFF;
+                font-size: 18px;
+              
+            }
+        }
+      
+    }
+    hr{
+      opacity: .68;
+      border-top: 1px solid rgba(255,255,255,.3);
+    }
+  }
+ .questions{
+  line-height: 35px;
+  padding: 33px 50px 0px 40px;
+  color: #FFFFFF;
+  list-style: none;
+  font-size: 16px;
+  min-height: 280px;
+  font-family: FontRegular;
+  margin: 0px;
+ 
+ 
+   li{
+    &:hover{
+   cursor: pointer;
+    color:  $yellow;
+    }
+ }
+ }
+ .section-three{
+  line-height: 29px;
+  padding: 15px 0px 7.5px 40px;
+   color: #FFFFFF;
+   p{  font-size: 14px;
+    font-family: FontRegular;
+    margin: 0px;
+   }
+   $md-radio-checked-color: $yellow;
+   $md-radio-border-color:$white;
+   $md-radio-size: 16px;
+   $md-radio-checked-size: 8px; 
+   $md-radio-ripple-size: 15px;
+   
+   @keyframes ripple {
+     0% {
+       box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.0);
+     }
+     50% { 
+       box-shadow: 0px 0px 0px $md-radio-ripple-size rgba(0, 0, 0, 0.1);
+     }
+     100% {
+       box-shadow: 0px 0px 0px $md-radio-ripple-size rgba(0, 0, 0, 0);
+     }
+   }
+   
+   .md-radio {
+    padding: 0px 0px 15px;
+       
+       &.md-radio-inline {
+           display: inline-block;
+       }
+   
+       input[type="radio"] {
+           display: none;
+           &:checked + label:before {
+               border-color: $md-radio-border-color;
+               animation: ripple 0.2s linear forwards;   
+           }
+           &:checked + label:after {
+               transform: scale(1);
+           }
+       }
+       
+       label {
+           display: inline-block;
+           height:$md-radio-size;
+           position: relative;
+           padding: 0 ($md-radio-size + 10px);
+           margin-bottom: 0;
+           cursor: pointer;
+           vertical-align: bottom;
+           &:before, &:after {
+               position: absolute;            
+               content: '';  
+               border-radius: 50%;
+               transition: all .3s ease;
+               transition-property: transform, border-color;
+           }
+           &:before {
+               left: 0;
+               top: 0;
+               width: $md-radio-size;
+               height: $md-radio-size;
+               border: 2px solid $md-radio-border-color;
+           }
+           &:after {
+               top: $md-radio-size / 2 - $md-radio-checked-size / 2;
+               left: $md-radio-size / 2 - $md-radio-checked-size / 2;
+               width:$md-radio-checked-size;
+               height:$md-radio-checked-size;
+               transform: scale(0);
+               background:$md-radio-checked-color;
+           }
+       }
+   }
+   
+ }
+ .section-four{
+
+  padding: 20px 0px 0px 40px;
+    color: #FFFFFF;
+    line-height: 6px;
+  .firttxt{
+    font-family: FontBold;
+    font-size: 14px;}
+  .secondtxt{
+    font-size: 13px;
+    font-family: FontRegular;
+  }}
+  .clickbtn{
+    
+    padding: 20px 40px 33px;
+  }
+  .chat-btn {
+   
+    color: #FFFFFF;
+    background-color: transparent;
+    width: 273px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: FontMedium;
+    border: 2px solid   $yellow; 
+    transition: all .25s linear;
+  &:hover{
+    outline: none;
+    background-color: $yellow;
+    color: $black;
+  }
+  }
+  
+  
+  
+  .chat-btn :focus {
+    outline: none; }
+  
